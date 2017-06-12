@@ -1,6 +1,6 @@
 # 运行
 
-mvn exec:java -Dexec.mainClass="com.blizzard.ow.Application"  
+`mvn clean compile exec:java -Dexec.mainClass="com.blizzard.ow.Application"`
 
 # 登录接口
 
