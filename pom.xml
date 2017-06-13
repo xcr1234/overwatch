@@ -6,7 +6,7 @@
 
     <groupId>com.blizzard</groupId>
     <artifactId>ow</artifactId>
-    <version>1.0</version>
+    <version>1.1</version>
 
     <dependencies>
         <dependency>
@@ -35,19 +35,9 @@
             <version>1.10</version>
         </dependency>
         <dependency>
-            <groupId>org.mozilla</groupId>
-            <artifactId>rhino</artifactId>
-            <version>1.7R4</version>
-        </dependency>
-        <dependency>
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
             <version>2.4</version>
-        </dependency>
-        <dependency>
-            <groupId>asm</groupId>
-            <artifactId>asm</artifactId>
-            <version>3.2</version>
         </dependency>
 
         <dependency>
@@ -89,46 +79,6 @@
                             <target>${jdk.version}</target>
                             <encoding>${encoding}</encoding>
                         </configuration>
-                    </plugin>
-                    <plugin>
-                        <artifactId>maven-resources-plugin</artifactId>
-                        <configuration>
-                            <encoding>${encoding}</encoding>
-                        </configuration>
-                    </plugin>
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-javadoc-plugin</artifactId>
-                        <version>2.4</version>
-                        <configuration>
-                            <charset>${encoding}</charset>
-                            <encoding>${encoding}</encoding>
-                            <docencoding>${encoding}</docencoding>
-                            <additionalparam>-Xdoclint:none</additionalparam>
-                        </configuration>
-                        <executions>
-                            <execution>
-                                <phase>compile</phase>
-                                <goals>
-                                    <goal>jar</goal>
-                                </goals>
-                            </execution>
-                        </executions>
-                    </plugin>
-                    <plugin>
-                        <artifactId>maven-source-plugin</artifactId>
-                        <version>2.4</version>
-                        <configuration>
-                            <attach>true</attach>
-                        </configuration>
-                        <executions>
-                            <execution>
-                                <phase>compile</phase>
-                                <goals>
-                                    <goal>jar</goal>
-                                </goals>
-                            </execution>
-                        </executions>
                     </plugin>
                 </plugins>
             </build>

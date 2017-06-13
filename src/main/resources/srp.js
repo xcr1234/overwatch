@@ -1,5 +1,6 @@
 var navigator = {};     //这里只是兼容一下
 
+
 function BigInteger(t, i, e) {
     null != t && ("number" == typeof t ? this.fromNumber(t, i, e) : null == i && "string" != typeof t ? this.fromString(t, 256) : this.fromString(t, i))
 }

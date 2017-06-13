@@ -38,7 +38,6 @@ public class MainFrame extends JFrame implements Constants{
     public MainFrame() {
         initComponents();
 
-        Login.init();
     }
 
     private static Log log = LogFactory.getLog(MainFrame.class);
