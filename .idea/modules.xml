@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/overwatch.iml" filepath="$PROJECT_DIR$/overwatch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/owapi/owapi.iml" filepath="$PROJECT_DIR$/owapi/owapi.iml" />
     </modules>
   </component>
 </project>

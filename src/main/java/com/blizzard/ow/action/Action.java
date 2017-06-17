@@ -80,7 +80,13 @@ public class Action {
 
 
     public final HttpResponse action() throws IOException {
-        HttpClient httpClient = Application.getClient();
+        return action(Application.getClient());
+    }
+
+    public final HttpResponse action(HttpClient httpClient) throws IOException{
+        if(httpClient == null){
+            return action();
+        }
         HttpRequestBase requestBase = request();
         RequestConfig config = config();
         if(config != null){

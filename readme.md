@@ -1,3 +1,17 @@
+# API（测试）
+
+我同时提供了一个JSON格式的API供使用，调用接口：
+
+`http://115.159.22.226/ow/api`
+
+（支持`GET/POST`）
+
+参数：
+
+*   username    ：   登录用户名
+*   password    ：   登录密码
+
+
 # 运行
 
 `mvn clean compile exec:java -Dexec.mainClass="com.blizzard.ow.Application"`

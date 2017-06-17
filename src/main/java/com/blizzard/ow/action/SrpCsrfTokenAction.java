@@ -3,6 +3,7 @@ package com.blizzard.ow.action;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.blizzard.ow.Constants;
+import org.apache.http.client.HttpClient;
 import org.apache.http.util.EntityUtils;
 
 import java.io.IOException;
@@ -19,6 +20,11 @@ public class SrpCsrfTokenAction extends Action{
 
     public JSONObject doAction() throws IOException{
         String str = EntityUtils.toString(action().getEntity());
+        return JSON.parseObject(str);
+    }
+
+    public JSONObject doAction(HttpClient httpClient) throws IOException{
+        String str = EntityUtils.toString(action(httpClient).getEntity());
         return JSON.parseObject(str);
     }
 }

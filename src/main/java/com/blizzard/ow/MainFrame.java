@@ -61,10 +61,8 @@ public class MainFrame extends JFrame implements Constants{
 
         //1-登录页面
         LoginPageAction action1 = new LoginPageAction();
-        String[] res1 = action1.doAction();
-
-        String csrfToken = res1[0],sessionTimeout = res1[1];
-        log.info("csrfToken:" + csrfToken + ",sessionTimeout:" + sessionTimeout);
+        String sessionTimeout = action1.doAction();
+        log.info("sessionTimeout:" + sessionTimeout);
 
         //2-请求srp-csrf Token
         JSONObject jsonObject = new SrpCsrfTokenAction(user).doAction();

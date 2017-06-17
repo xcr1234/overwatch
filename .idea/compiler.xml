@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="overwatch" />
+        <module name="owapi" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="overwatch" target="1.8" />
+      <module name="owapi" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
